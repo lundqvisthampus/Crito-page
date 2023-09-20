@@ -458,7 +458,7 @@ main {
     .features-section {
 
         .container {
-            border: 2px solid #F0EFE9;
+            border: 3px solid #F0EFE9;
             max-width: 1520px;
             padding-top: 60px;
 
@@ -523,6 +523,57 @@ main {
                             padding-bottom: 50px;
                         }
                     }
+                }
+            }
+
+        }
+    }
+
+    .about-company-section {
+        margin: 100px 0px;
+        
+
+        .container {
+            display: flex;
+
+
+            .company-images {
+                padding-left: 55px;
+                padding-right: 20px;
+                position: relative;
+                
+
+                .company-img1 {
+
+                }
+
+                .company-img2 {
+                    position: absolute;
+                    left: -72px;
+                    bottom: -36px;
+                }
+
+                .company-img3 {
+                    position: absolute;
+                    top: 40px;
+                    left: 20px;
+                }
+                
+            }
+
+            .section-title {
+                padding-top: 0;
+                padding-left: 100px;
+                padding-right: 55px;
+
+                h2 {
+                    padding-top: 10px;
+                    padding-bottom: 30px;
+                }
+
+                .main-text {
+                    color: #636363;
+                    padding-bottom: 40px;
                 }
             }
 
