@@ -256,7 +256,7 @@ main {
             z-index: -1;
 
             @media (min-width: 992px) {
-                display: inline;
+                display: inline
             }
         }
     
@@ -623,11 +623,13 @@ main {
     .our-services-section {
         background-color: #F0EFE9;
         position: relative;
+        z-index: 0;
 
         .bkg-whitelines-right {
             position: absolute;
             bottom: 0;
             right: 0;
+            z-index: -1;
         }
 
         .container {
@@ -642,6 +644,7 @@ main {
                 
                 @media (min-width: 1200px) {
                     text-align: start;
+                    margin-left: 12px;
                 }
             }
 
@@ -649,50 +652,57 @@ main {
                 text-align: start;
                 display: flex;
 
-                #left-box {
-                    margin-left: 0;
+                .first-boxes, .second-boxes {
+
+                    @media (min-width: 1200px) {
+                        display: flex;
+                    }
+
+                    .consulting-box {
+                        padding: 46px 18px;
+                        background-color: white;
+                        margin-left: 12px;
+                        margin-right: 12px;
+                        margin-bottom: 24px;
+
+                        &:hover {
+                            background-color: #F9D783;
+                        }
+    
+                        h3 {
+                            padding-top: 30px;
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;
+                            color: #191919;
+                        }
+    
+                        p {
+                            color: #636363;
+                            padding: 10px 0px;
+                        }
+    
+                        i {
+                            font-size: 50px;
+                            display: block;
+                            text-align: end;
+                            color: #191919;
+                        }
+    
+                        .icon2 {
+                            display: none;
+                        }
+    
+                        &:hover .icon1 {
+                            display: none;
+                        }
+    
+                        &:hover .icon2 {
+                            display: block;
+                        }
+                    }
                 }
-                .consulting-box {
-                    padding: 46px 18px;
-                    background-color: white;
-                    margin-left: 30px;
-
-                    &:hover {
-                        background-color: #F9D783;
-                    }
-
-                    h3 {
-                        padding-top: 30px;
-                        font-family: 'DM Sans', sans-serif;
-                        font-size: 22px;
-                        font-weight: 700;
-                        color: #191919;
-                    }
-
-                    p {
-                        color: #636363;
-                        padding: 10px 0px;
-                    }
-
-                    i {
-                        font-size: 50px;
-                        display: block;
-                        text-align: end;
-                        color: #191919;
-                    }
-
-                    .icon2 {
-                        display: none;
-                    }
-
-                    &:hover .icon1 {
-                        display: none;
-                    }
-
-                    &:hover .icon2 {
-                        display: block;
-                    }
-                }
+                
             }
 
             .browse-services {
