@@ -539,12 +539,7 @@ main {
                 .company-img2 {
                     position: absolute;
                     left: -72px;
-                    bottom: 46px;
-
-                    @media (min-width: 1400px) {
-                        left: -72px;
-                        bottom: 0;
-                    }
+                    bottom: 0;
                 }
 
                 .company-img3 {
@@ -590,8 +585,12 @@ main {
 
                     @media (min-width: 1200px) {
                         justify-content: start;
+                    }
+
+                    @media (min-width: 1400px) {
                         padding-top: 50px;
                     }
+
 
                     .video-button {
                         display: flex;
@@ -606,7 +605,7 @@ main {
                         }
 
                         &:hover i {
-                            color: #5f5f5f;
+                            color: #636363;
                         }
     
                         i {
@@ -618,6 +617,88 @@ main {
 
             }
 
+        }
+    }
+
+    .our-services-section {
+        background-color: #F0EFE9;
+        position: relative;
+
+        .bkg-whitelines-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .container {
+            text-align: center;
+
+            .section-title {
+                padding-bottom: 40px;
+
+                h2 {
+                    padding-top: 10px;
+                }
+                
+                @media (min-width: 1200px) {
+                    text-align: start;
+                }
+            }
+
+            .services {
+                text-align: start;
+                display: flex;
+
+                #left-box {
+                    margin-left: 0;
+                }
+                .consulting-box {
+                    padding: 46px 18px;
+                    background-color: white;
+                    margin-left: 30px;
+
+                    &:hover {
+                        background-color: #F9D783;
+                    }
+
+                    h3 {
+                        padding-top: 30px;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: #191919;
+                    }
+
+                    p {
+                        color: #636363;
+                        padding: 10px 0px;
+                    }
+
+                    i {
+                        font-size: 50px;
+                        display: block;
+                        text-align: end;
+                        color: #191919;
+                    }
+
+                    .icon2 {
+                        display: none;
+                    }
+
+                    &:hover .icon1 {
+                        display: none;
+                    }
+
+                    &:hover .icon2 {
+                        display: block;
+                    }
+                }
+            }
+
+            .browse-services {
+                padding-top: 50px;
+                padding-bottom: 110px;
+            }
         }
     }
 }

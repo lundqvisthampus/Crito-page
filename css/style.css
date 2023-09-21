@@ -472,13 +472,7 @@ main .about-company-section .container .company-images {
 main .about-company-section .container .company-images .company-img2 {
   position: absolute;
   left: -72px;
-  bottom: 46px;
-}
-@media (min-width: 1400px) {
-  main .about-company-section .container .company-images .company-img2 {
-    left: -72px;
-    bottom: 0;
-  }
+  bottom: 0;
 }
 main .about-company-section .container .company-images .company-img3 {
   position: absolute;
@@ -522,6 +516,10 @@ main .about-company-section .container .section-title .bottom-buttons {
 @media (min-width: 1200px) {
   main .about-company-section .container .section-title .bottom-buttons {
     justify-content: start;
+  }
+}
+@media (min-width: 1400px) {
+  main .about-company-section .container .section-title .bottom-buttons {
     padding-top: 50px;
   }
 }
@@ -537,9 +535,77 @@ main .about-company-section .container .section-title .bottom-buttons .video-but
   text-decoration: underline;
 }
 main .about-company-section .container .section-title .bottom-buttons .video-button:hover i {
-  color: #5f5f5f;
+  color: #636363;
 }
 main .about-company-section .container .section-title .bottom-buttons .video-button i {
   font-size: 50px;
   padding-right: 16px;
+}
+main .our-services-section {
+  background-color: #F0EFE9;
+  position: relative;
+}
+main .our-services-section .bkg-whitelines-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .our-services-section .container {
+  text-align: center;
+}
+main .our-services-section .container .section-title {
+  padding-bottom: 40px;
+}
+main .our-services-section .container .section-title h2 {
+  padding-top: 10px;
+}
+@media (min-width: 1200px) {
+  main .our-services-section .container .section-title {
+    text-align: start;
+  }
+}
+main .our-services-section .container .services {
+  text-align: start;
+  display: flex;
+}
+main .our-services-section .container .services #left-box {
+  margin-left: 0;
+}
+main .our-services-section .container .services .consulting-box {
+  padding: 46px 18px;
+  background-color: white;
+  margin-left: 30px;
+}
+main .our-services-section .container .services .consulting-box:hover {
+  background-color: #F9D783;
+}
+main .our-services-section .container .services .consulting-box h3 {
+  padding-top: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #191919;
+}
+main .our-services-section .container .services .consulting-box p {
+  color: #636363;
+  padding: 10px 0px;
+}
+main .our-services-section .container .services .consulting-box i {
+  font-size: 50px;
+  display: block;
+  text-align: end;
+  color: #191919;
+}
+main .our-services-section .container .services .consulting-box .icon2 {
+  display: none;
+}
+main .our-services-section .container .services .consulting-box:hover .icon1 {
+  display: none;
+}
+main .our-services-section .container .services .consulting-box:hover .icon2 {
+  display: block;
+}
+main .our-services-section .container .browse-services {
+  padding-top: 50px;
+  padding-bottom: 110px;
 }
