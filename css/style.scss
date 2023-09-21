@@ -21,7 +21,7 @@ html, body {
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 13px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -43,7 +43,7 @@ html, body {
     border: 1px solid #191919;
     color: #F0EFE9;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 13px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -65,7 +65,7 @@ html, body {
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 13px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -489,7 +489,7 @@ main {
                 }
 
                 a {
-                    padding: 14px 160px;
+                    padding: 16px 160px;
                 }
             }
 
@@ -532,17 +532,14 @@ main {
     .about-company-section {
         margin: 100px 0px;
         
-
         .container {
             display: flex;
-
 
             .company-images {
                 padding-left: 55px;
                 padding-right: 20px;
                 position: relative;
                 
-
                 .company-img1 {
 
                 }
@@ -550,7 +547,7 @@ main {
                 .company-img2 {
                     position: absolute;
                     left: -72px;
-                    bottom: -36px;
+                    bottom: 0;
                 }
 
                 .company-img3 {
@@ -575,6 +572,35 @@ main {
                     color: #636363;
                     padding-bottom: 40px;
                 }
+
+                .bottom-buttons {
+                    display: flex;
+                    gap: 60px;
+                    padding-top: 50px;
+
+                    .video-button {
+                        display: flex;
+                        align-items: center;
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #191919;
+
+                        &:hover span {
+                            text-decoration: underline;
+                        }
+
+                        &:hover i {
+                            color: #5f5f5f;
+                        }
+    
+                        i {
+                            font-size: 50px;
+                            padding-right: 16px;
+                        }
+                    }
+                }
+
             }
 
         }

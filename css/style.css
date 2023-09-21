@@ -20,7 +20,7 @@ html, body {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 13px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -40,7 +40,7 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 13px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -60,7 +60,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 13px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -434,7 +434,7 @@ main .features-section .container .features-left h2 {
   padding-bottom: 40px;
 }
 main .features-section .container .features-left a {
-  padding: 14px 160px;
+  padding: 16px 160px;
 }
 main .features-section .container .features-right {
   display: flex;
@@ -474,7 +474,7 @@ main .about-company-section .container .company-images {
 main .about-company-section .container .company-images .company-img2 {
   position: absolute;
   left: -72px;
-  bottom: -36px;
+  bottom: 0;
 }
 main .about-company-section .container .company-images .company-img3 {
   position: absolute;
@@ -493,4 +493,27 @@ main .about-company-section .container .section-title h2 {
 main .about-company-section .container .section-title .main-text {
   color: #636363;
   padding-bottom: 40px;
+}
+main .about-company-section .container .section-title .bottom-buttons {
+  display: flex;
+  gap: 60px;
+  padding-top: 50px;
+}
+main .about-company-section .container .section-title .bottom-buttons .video-button {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  color: #191919;
+}
+main .about-company-section .container .section-title .bottom-buttons .video-button:hover span {
+  text-decoration: underline;
+}
+main .about-company-section .container .section-title .bottom-buttons .video-button:hover i {
+  color: #5f5f5f;
+}
+main .about-company-section .container .section-title .bottom-buttons .video-button i {
+  font-size: 50px;
+  padding-right: 16px;
 }
