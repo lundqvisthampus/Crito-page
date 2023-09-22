@@ -635,20 +635,34 @@ main .why-us-section .container .why-us .section-title {
     text-align: start;
   }
 }
-main .why-us-section .container .why-us .skills-box {
+main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
   display: flex;
-  margin-top: 40px;
 }
-main .why-us-section .container .why-us .skills-box i {
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
+    display: block;
+  }
+}
+main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
+  margin: 40px;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
+    display: flex;
+    margin: 40px 0px 0px 0px;
+  }
+}
+main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
   font-size: 46px;
   margin-right: 36px;
+  margin-bottom: 20px;
 }
-main .why-us-section .container .why-us .skills-box .skills-box-text h3 {
+main .why-us-section .container .why-us .first-boxes .skills-box .skills-box-text h3, main .why-us-section .container .why-us .second-boxes .skills-box .skills-box-text h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-main .why-us-section .container .why-us .skills-box .skills-box-text p {
+main .why-us-section .container .why-us .first-boxes .skills-box .skills-box-text p, main .why-us-section .container .why-us .second-boxes .skills-box .skills-box-text p {
   color: #636363;
 }
 main .why-us-section .container .why-us-1 {

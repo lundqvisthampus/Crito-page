@@ -732,29 +732,43 @@ main {
                     }
                 }
 
-                .skills-box {
+                .first-boxes, .second-boxes {
                     display: flex;
-                    margin-top: 40px;
 
-                    i {
-                        font-size: 46px;
-                        margin-right: 36px;
+                    @media (min-width: 1200px) {
+                        display: block;
                     }
 
-                    .skills-box-text {
+                    .skills-box {
+                        margin: 40px;
 
-                        h3 {
-                            font-family: 'DM Sans', sans-serif;
-                            font-size: 22px;
-                            font-weight: 700;
+                        @media (min-width: 1200px) {
+                            display: flex;
+                            margin: 40px 0px 0px 0px;
                         }
     
-                        p {
-                            color: #636363;
+                        i {
+                            font-size: 46px;
+                            margin-right: 36px;
+                            margin-bottom: 20px;
                         }
+    
+                        .skills-box-text {
+    
+                            h3 {
+                                font-family: 'DM Sans', sans-serif;
+                                font-size: 22px;
+                                font-weight: 700;
+                            }
+        
+                            p {
+                                color: #636363;
+                            }
+                        }
+    
                     }
-
                 }
+                
 
           
             }
