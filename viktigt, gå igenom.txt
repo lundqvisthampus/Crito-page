@@ -1,5 +1,0 @@
-1. Kolla att alla länkar är klickbara
-2. Kolla att "alt" finns på alla img's
-3. Kolla att alla <p> har samma färg
-4. Ta bort onödiga spaces i css filen
-5. 
