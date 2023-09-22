@@ -702,23 +702,55 @@ main .our-team-section {
   background-color: #F0D082;
 }
 main .our-team-section .container .top-row {
-  display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .top-row {
+    display: flex;
+    text-align: start;
+  }
+}
+main .our-team-section .container .top-row .section-title {
+  padding-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .top-row .section-title {
+    padding-bottom: 60px;
+  }
+}
+main .our-team-section .container .top-row .browse-team {
+  padding: 10px 0px;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .top-row .browse-team {
+    padding-top: 60px;
+  }
 }
 main .our-team-section .container .team-members {
+  gap: 20px;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .team-members {
+    display: flex;
+  }
+}
+main .our-team-section .container .team-members .members-first, main .our-team-section .container .team-members .members-second {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: center;
 }
-main .our-team-section .container .team-members .member img {
-  margin-bottom: 30px;
+main .our-team-section .container .team-members .members-first .member img, main .our-team-section .container .team-members .members-second .member img {
+  margin: 40px 0px;
+  width: 100%;
 }
-main .our-team-section .container .team-members .member h3 {
+main .our-team-section .container .team-members .members-first .member h3, main .our-team-section .container .team-members .members-second .member h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: bold;
 }
-main .our-team-section .container .team-members .member p {
+main .our-team-section .container .team-members .members-first .member p, main .our-team-section .container .team-members .members-second .member p {
   color: #636363;
 }
 main .our-team-section .container .bottom-dots {
