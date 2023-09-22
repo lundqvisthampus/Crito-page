@@ -808,4 +808,57 @@ main {
         }
 
     }
+
+    .our-team-section {
+        background-color: #F0D082;
+        .container {
+
+            .top-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .section-title {
+
+                }
+
+                .browse-team {
+
+                }
+            }
+
+            .team-members {
+                display: flex;
+                justify-content: space-between;
+                .member {
+
+                    img {
+                        margin-bottom: 30px;
+                    }
+
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color:#636363;
+                    }
+
+                }
+            }
+
+            .bottom-dots {
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 60px;
+
+                i {
+                    font-size: 12px;
+                    margin: 8px;
+                }
+            }
+        }
+    }
 }

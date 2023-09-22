@@ -698,3 +698,35 @@ main .why-us-section .container .why-us-2 {
     height: 420px;
   }
 }
+main .our-team-section {
+  background-color: #F0D082;
+}
+main .our-team-section .container .top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .our-team-section .container .team-members {
+  display: flex;
+  justify-content: space-between;
+}
+main .our-team-section .container .team-members .member img {
+  margin-bottom: 30px;
+}
+main .our-team-section .container .team-members .member h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+main .our-team-section .container .team-members .member p {
+  color: #636363;
+}
+main .our-team-section .container .bottom-dots {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+main .our-team-section .container .bottom-dots i {
+  font-size: 12px;
+  margin: 8px;
+}
