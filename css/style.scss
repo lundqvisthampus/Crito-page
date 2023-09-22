@@ -83,11 +83,11 @@ html, body {
 }
 
 .section-title {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
     @media (min-width: 768px) {
-        padding-top: 120px;
+        padding-top: 100px;
         padding-bottom: 90px;
     }
 
@@ -289,6 +289,7 @@ main {
                 }
     
                 p {
+                    color: #636363;
                     font-size: 18px;
                     padding-top: 40px;
                     padding-bottom: 40px;
@@ -525,7 +526,11 @@ main {
     }
 
     .about-company-section {
-        margin: 100px 0px;
+        margin-top: 70px;
+
+        @media (min-width: 1200px) {
+            margin: 80px 0px;
+        }
         
         .container {
             display: flex;
@@ -637,6 +642,7 @@ main {
 
             .section-title {
                 padding-bottom: 40px;
+                padding-top: 80px;
 
                 h2 {
                     padding-top: 10px;
@@ -644,7 +650,7 @@ main {
                 
                 @media (min-width: 1200px) {
                     text-align: start;
-                    margin-left: 12px;
+                    padding: 100px 12px 40px 12px;
                 }
             }
 
@@ -658,16 +664,16 @@ main {
                         display: flex;
                     }
 
+                    #yellow-consulting {
+                        background-color: #F9D783;
+                    }
+
                     .consulting-box {
                         padding: 46px 18px;
                         background-color: white;
                         margin-left: 12px;
                         margin-right: 12px;
                         margin-bottom: 24px;
-
-                        &:hover {
-                            background-color: #F9D783;
-                        }
     
                         h3 {
                             padding-top: 30px;
@@ -689,17 +695,6 @@ main {
                             color: #191919;
                         }
     
-                        .icon2 {
-                            display: none;
-                        }
-    
-                        &:hover .icon1 {
-                            display: none;
-                        }
-    
-                        &:hover .icon2 {
-                            display: block;
-                        }
                     }
                 }
                 
@@ -710,5 +705,93 @@ main {
                 padding-bottom: 110px;
             }
         }
+    }
+
+    .why-us-section {
+
+        .container {
+            position: relative;
+            justify-content: center;
+            display: flex;
+            padding-top: 60px;
+            z-index: 0;
+
+            @media (min-width: 1200px) {
+                justify-content: space-between;
+            }
+
+
+            .why-us {
+
+                .section-title {
+                    padding: 0;
+                    text-align: center;
+
+                    @media (min-width: 1200px) {
+                        text-align: start;
+                    }
+                }
+
+                .skills-box {
+                    display: flex;
+                    margin-top: 40px;
+
+                    i {
+                        font-size: 46px;
+                        margin-right: 36px;
+                    }
+
+                    .skills-box-text {
+
+                        h3 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+    
+                        p {
+                            color: #636363;
+                        }
+                    }
+
+                }
+
+          
+            }
+
+            .why-us-1 {
+                display: none;
+                padding-top: 30px;
+
+                @media (min-width: 1200px) {
+                    height: 460px;
+                    display: inline;
+                }
+
+                @media (min-width: 1400px) {
+                    height: 520px;
+                }
+
+            }
+
+            .why-us-2 {
+                display: none;
+                z-index: -1;
+                position: absolute;
+                bottom: 20px;
+                right: -300px;
+
+                @media (min-width: 1200px) {
+                    height: 390px;
+                    display: inline;
+                }
+
+                @media (min-width: 1400px) {
+                    height: 420px;
+                }
+
+            }
+        }
+
     }
 }

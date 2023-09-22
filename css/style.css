@@ -76,12 +76,12 @@ html, body {
 }
 
 .section-title {
-  padding-top: 70px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 @media (min-width: 768px) {
   .section-title {
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 90px;
   }
 }
@@ -264,6 +264,7 @@ main .showcase-section .container .content h1 {
   }
 }
 main .showcase-section .container .content p {
+  color: #636363;
   font-size: 18px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -458,7 +459,12 @@ main .newsletter-section .container form input {
   margin-right: 20px;
 }
 main .about-company-section {
-  margin: 100px 0px;
+  margin-top: 70px;
+}
+@media (min-width: 1200px) {
+  main .about-company-section {
+    margin: 80px 0px;
+  }
 }
 main .about-company-section .container {
   display: flex;
@@ -557,6 +563,7 @@ main .our-services-section .container {
 }
 main .our-services-section .container .section-title {
   padding-bottom: 40px;
+  padding-top: 80px;
 }
 main .our-services-section .container .section-title h2 {
   padding-top: 10px;
@@ -564,7 +571,7 @@ main .our-services-section .container .section-title h2 {
 @media (min-width: 1200px) {
   main .our-services-section .container .section-title {
     text-align: start;
-    margin-left: 12px;
+    padding: 100px 12px 40px 12px;
   }
 }
 main .our-services-section .container .services {
@@ -576,15 +583,15 @@ main .our-services-section .container .services {
     display: flex;
   }
 }
+main .our-services-section .container .services .first-boxes #yellow-consulting, main .our-services-section .container .services .second-boxes #yellow-consulting {
+  background-color: #F9D783;
+}
 main .our-services-section .container .services .first-boxes .consulting-box, main .our-services-section .container .services .second-boxes .consulting-box {
   padding: 46px 18px;
   background-color: white;
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 24px;
-}
-main .our-services-section .container .services .first-boxes .consulting-box:hover, main .our-services-section .container .services .second-boxes .consulting-box:hover {
-  background-color: #F9D783;
 }
 main .our-services-section .container .services .first-boxes .consulting-box h3, main .our-services-section .container .services .second-boxes .consulting-box h3 {
   padding-top: 30px;
@@ -603,16 +610,77 @@ main .our-services-section .container .services .first-boxes .consulting-box i, 
   text-align: end;
   color: #191919;
 }
-main .our-services-section .container .services .first-boxes .consulting-box .icon2, main .our-services-section .container .services .second-boxes .consulting-box .icon2 {
-  display: none;
-}
-main .our-services-section .container .services .first-boxes .consulting-box:hover .icon1, main .our-services-section .container .services .second-boxes .consulting-box:hover .icon1 {
-  display: none;
-}
-main .our-services-section .container .services .first-boxes .consulting-box:hover .icon2, main .our-services-section .container .services .second-boxes .consulting-box:hover .icon2 {
-  display: block;
-}
 main .our-services-section .container .browse-services {
   padding-top: 50px;
   padding-bottom: 110px;
+}
+main .why-us-section .container {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  padding-top: 60px;
+  z-index: 0;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container {
+    justify-content: space-between;
+  }
+}
+main .why-us-section .container .why-us .section-title {
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us .section-title {
+    text-align: start;
+  }
+}
+main .why-us-section .container .why-us .skills-box {
+  display: flex;
+  margin-top: 40px;
+}
+main .why-us-section .container .why-us .skills-box i {
+  font-size: 46px;
+  margin-right: 36px;
+}
+main .why-us-section .container .why-us .skills-box .skills-box-text h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+main .why-us-section .container .why-us .skills-box .skills-box-text p {
+  color: #636363;
+}
+main .why-us-section .container .why-us-1 {
+  display: none;
+  padding-top: 30px;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us-1 {
+    height: 460px;
+    display: inline;
+  }
+}
+@media (min-width: 1400px) {
+  main .why-us-section .container .why-us-1 {
+    height: 520px;
+  }
+}
+main .why-us-section .container .why-us-2 {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  bottom: 20px;
+  right: -300px;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us-2 {
+    height: 390px;
+    display: inline;
+  }
+}
+@media (min-width: 1400px) {
+  main .why-us-section .container .why-us-2 {
+    height: 420px;
+  }
 }
