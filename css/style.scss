@@ -21,7 +21,7 @@ html, body {
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 26px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -43,7 +43,7 @@ html, body {
     border: 1px solid #191919;
     color: #F0EFE9;
     text-decoration: none;
-    padding: 10px 34px;
+    padding: 10px 26px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -65,7 +65,7 @@ html, body {
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 26px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -540,7 +540,7 @@ main {
                 .company-img2 {
                     position: absolute;
                     left: -72px;
-                    bottom: 0;
+                    bottom: 64px;
                 }
 
                 .company-img3 {
@@ -682,7 +682,6 @@ main {
                         p {
                             color: #636363;
                             padding: 10px 0px;
-                            line-height: 2;
                         }
     
                         i {
@@ -803,7 +802,7 @@ main {
                 }
 
                 @media (min-width: 1400px) {
-                    height: 420px;
+                    height: 440px;
                 }
 
             }
@@ -902,58 +901,78 @@ main {
 
         .container {
             background-color: white;
-            max-width: 1520px;
-            padding: 0px 150px 150px 150px;
+            padding: 0px 120px 130px 120px;
             text-align: center;
 
+            @media (min-width: 1400px) {
+                max-width: 1520px;
+            }
+
             .btn-black {
-                padding-top: 14px;
-                padding-bottom: 14px;
+                padding: 14px 30px;
             }
 
-            .section-title {
-
-                p {
-                    padding-bottom: 20px;
-                }
-            }
 
             .reviews {  
-                display: flex;
                 margin-bottom: 100px;
-                gap: 120px;
+                gap: 90px;
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                }
 
                 .review-box {
                     text-align: start;
+                    margin-bottom: 70px;
+
+                    @media (min-width: 1200px) {
+                        margin-bottom: 0;
+                    }
 
                     i {
                         color: #F94D1C;
-                        margin-bottom: 22px;
+                        margin-bottom: 18px;
                         font-size: 14px;
-                    }
-    
-                    p {
-                        line-height: 2;
                     }
     
                     .client {
                         display: flex;
                         align-items: center;
-                        margin-top: 40px;
+
+                        @media (min-width: 1200px) {
+                            display: block;
+                            margin-top: 40px;
+                        }
+
+                        @media (min-width: 1400px) {
+                            display: flex;
+                        }
 
                         img {
                             margin-right: 16px;
+                            margin-bottom: 16px;
+                            display: none;
+
+                            @media (min-width: 768px) {
+                                display: inline;
+                            }
                         }
 
                         .client-info {
                             h3 {
                                 font-family: 'DM Sans', sans-serif;
-                                font-size: 22px;
-                                font-weight: 700;
+                                font-size: 19px;
+                                font-weight: 900;
                                 margin: 0;
+
+                                @media (min-width: 1200px) {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                }
                             }
+
         
-                            .client-work-position {
+                            .client-work-info {
                                 color: #F94D1C;
                                 margin: 0;
                             }

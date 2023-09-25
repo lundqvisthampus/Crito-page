@@ -20,7 +20,7 @@ html, body {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 26px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -40,7 +40,7 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
   text-decoration: none;
-  padding: 10px 34px;
+  padding: 10px 26px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -60,7 +60,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 26px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -474,7 +474,7 @@ main .about-company-section .container .company-images {
 main .about-company-section .container .company-images .company-img2 {
   position: absolute;
   left: -72px;
-  bottom: 0;
+  bottom: 64px;
 }
 main .about-company-section .container .company-images .company-img3 {
   position: absolute;
@@ -599,7 +599,6 @@ main .our-services-section .container .services .first-boxes .consulting-box h3,
 main .our-services-section .container .services .first-boxes .consulting-box p, main .our-services-section .container .services .second-boxes .consulting-box p {
   color: #636363;
   padding: 10px 0px;
-  line-height: 2;
 }
 main .our-services-section .container .services .first-boxes .consulting-box i, main .our-services-section .container .services .second-boxes .consulting-box i {
   font-size: 50px;
@@ -696,7 +695,7 @@ main .why-us-section .container .why-us-2 {
 }
 @media (min-width: 1400px) {
   main .why-us-section .container .why-us-2 {
-    height: 420px;
+    height: 440px;
   }
 }
 main .our-team-section {
@@ -773,48 +772,78 @@ main .testimonial-section {
 }
 main .testimonial-section .container {
   background-color: white;
-  max-width: 1520px;
-  padding: 0px 150px 150px 150px;
+  padding: 0px 120px 130px 120px;
   text-align: center;
 }
-main .testimonial-section .container .btn-black {
-  padding-top: 14px;
-  padding-bottom: 14px;
+@media (min-width: 1400px) {
+  main .testimonial-section .container {
+    max-width: 1520px;
+  }
 }
-main .testimonial-section .container .section-title p {
-  padding-bottom: 20px;
+main .testimonial-section .container .btn-black {
+  padding: 14px 30px;
 }
 main .testimonial-section .container .reviews {
-  display: flex;
   margin-bottom: 100px;
-  gap: 120px;
+  gap: 90px;
+}
+@media (min-width: 1200px) {
+  main .testimonial-section .container .reviews {
+    display: flex;
+  }
 }
 main .testimonial-section .container .reviews .review-box {
   text-align: start;
+  margin-bottom: 70px;
+}
+@media (min-width: 1200px) {
+  main .testimonial-section .container .reviews .review-box {
+    margin-bottom: 0;
+  }
 }
 main .testimonial-section .container .reviews .review-box i {
   color: #F94D1C;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: 14px;
-}
-main .testimonial-section .container .reviews .review-box p {
-  line-height: 2;
 }
 main .testimonial-section .container .reviews .review-box .client {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+}
+@media (min-width: 1200px) {
+  main .testimonial-section .container .reviews .review-box .client {
+    display: block;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  main .testimonial-section .container .reviews .review-box .client {
+    display: flex;
+  }
 }
 main .testimonial-section .container .reviews .review-box .client img {
   margin-right: 16px;
+  margin-bottom: 16px;
+  display: none;
+}
+@media (min-width: 768px) {
+  main .testimonial-section .container .reviews .review-box .client img {
+    display: inline;
+  }
 }
 main .testimonial-section .container .reviews .review-box .client .client-info h3 {
   font-family: "DM Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 19px;
+  font-weight: 900;
   margin: 0;
 }
-main .testimonial-section .container .reviews .review-box .client .client-info .client-work-position {
+@media (min-width: 1200px) {
+  main .testimonial-section .container .reviews .review-box .client .client-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+main .testimonial-section .container .reviews .review-box .client .client-info .client-work-info {
   color: #F94D1C;
   margin: 0;
 }
