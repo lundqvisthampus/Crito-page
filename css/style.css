@@ -418,7 +418,7 @@ main .project-case-section .container .project-grid .project .readmore {
 main .project-case-section .container .project-grid .project .readmore i {
   margin-left: 3px;
 }
-main .project-case-section .container .project-grid .project:hover .readmore {
+main .project-case-section .container .project-grid .project:hover {
   text-decoration: underline;
 }
 main .project-case-section .container .center-content {
@@ -886,6 +886,10 @@ main .article-news-section .container .articles-and-news {
     display: flex;
   }
 }
+main .article-news-section .container .articles-and-news .article {
+  color: #191919;
+  text-decoration: none;
+}
 main .article-news-section .container .articles-and-news .article img {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -903,6 +907,9 @@ main .article-news-section .container .articles-and-news .article h3 {
 }
 main .article-news-section .container .articles-and-news .article p {
   color: #636363;
+}
+main .article-news-section .container .articles-and-news .article:hover h3 {
+  text-decoration: underline;
 }
 main .article-news-section .container .bottom-dots {
   text-align: center;

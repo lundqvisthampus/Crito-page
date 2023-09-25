@@ -471,7 +471,7 @@ main {
                         }
                     }
 
-                    &:hover .readmore {
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
@@ -1033,7 +1033,10 @@ main {
                     display: flex;
                 }
 
+
                 .article {
+                    color: #191919;
+                    text-decoration: none;
 
                     img {
                         margin-top: 60px;
@@ -1053,6 +1056,10 @@ main {
 
                     p {
                         color:#636363;
+                    }
+
+                    &:hover h3 {
+                        text-decoration: underline;
                     }
                 }
             }
