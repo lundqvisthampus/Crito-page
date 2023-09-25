@@ -6,7 +6,7 @@ html, body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .wrapper-grid {
@@ -21,7 +21,7 @@ html, body {
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
-    padding: 13px 26px;
+    padding: 10px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -43,7 +43,7 @@ html, body {
     border: 1px solid #191919;
     color: #F0EFE9;
     text-decoration: none;
-    padding: 13px 26px;
+    padding: 10px 34px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -65,7 +65,7 @@ html, body {
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
-    padding: 13px 26px;
+    padding: 10px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -231,10 +231,6 @@ header {
                 }
             }
 
-            .btn-login {
-                padding-top: 12px;
-                padding-bottom: 12px;
-            }
         }
 
     }
@@ -686,6 +682,7 @@ main {
                         p {
                             color: #636363;
                             padding: 10px 0px;
+                            line-height: 2;
                         }
     
                         i {
@@ -703,6 +700,11 @@ main {
             .browse-services {
                 padding-top: 50px;
                 padding-bottom: 110px;
+
+                .btn-transparent {
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
             }
         }
     }
@@ -833,6 +835,11 @@ main {
                 }
 
                 .browse-team {
+
+                    .btn-transparent {
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                    }
                     padding: 10px 0px;
 
                     @media (min-width: 1200px) {
@@ -886,6 +893,77 @@ main {
                     margin: 8px;
                 }
             }
+        }
+    }
+
+    .testimonial-section {
+        background-color: #F0D082;
+        padding-bottom: 120px;
+
+        .container {
+            background-color: white;
+            max-width: 1520px;
+            padding: 0px 150px 150px 150px;
+            text-align: center;
+
+            .btn-black {
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+
+            .section-title {
+
+                p {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .reviews {  
+                display: flex;
+                margin-bottom: 100px;
+                gap: 120px;
+
+                .review-box {
+                    text-align: start;
+
+                    i {
+                        color: #F94D1C;
+                        margin-bottom: 22px;
+                        font-size: 14px;
+                    }
+    
+                    p {
+                        line-height: 2;
+                    }
+    
+                    .client {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 40px;
+
+                        img {
+                            margin-right: 16px;
+                        }
+
+                        .client-info {
+                            h3 {
+                                font-family: 'DM Sans', sans-serif;
+                                font-size: 22px;
+                                font-weight: 700;
+                                margin: 0;
+                            }
+        
+                            .client-work-position {
+                                color: #F94D1C;
+                                margin: 0;
+                            }
+                        }
+    
+                    }
+                }
+
+            }
+
         }
     }
 }

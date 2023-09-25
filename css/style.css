@@ -5,7 +5,7 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .wrapper-grid {
@@ -20,7 +20,7 @@ html, body {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 13px 26px;
+  padding: 10px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -40,7 +40,7 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
   text-decoration: none;
-  padding: 13px 26px;
+  padding: 10px 34px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -60,7 +60,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 13px 26px;
+  padding: 10px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -210,10 +210,6 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   left: 50%;
   bottom: -3px;
   transform: translate(calc(50% - 15px));
-}
-header .container .menu .btn-login {
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 main .showcase-section {
@@ -603,6 +599,7 @@ main .our-services-section .container .services .first-boxes .consulting-box h3,
 main .our-services-section .container .services .first-boxes .consulting-box p, main .our-services-section .container .services .second-boxes .consulting-box p {
   color: #636363;
   padding: 10px 0px;
+  line-height: 2;
 }
 main .our-services-section .container .services .first-boxes .consulting-box i, main .our-services-section .container .services .second-boxes .consulting-box i {
   font-size: 50px;
@@ -613,6 +610,10 @@ main .our-services-section .container .services .first-boxes .consulting-box i, 
 main .our-services-section .container .browse-services {
   padding-top: 50px;
   padding-bottom: 110px;
+}
+main .our-services-section .container .browse-services .btn-transparent {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 main .why-us-section .container {
   position: relative;
@@ -723,6 +724,10 @@ main .our-team-section .container .top-row .section-title {
 main .our-team-section .container .top-row .browse-team {
   padding: 10px 0px;
 }
+main .our-team-section .container .top-row .browse-team .btn-transparent {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 @media (min-width: 1200px) {
   main .our-team-section .container .top-row .browse-team {
     padding-top: 60px;
@@ -761,4 +766,55 @@ main .our-team-section .container .bottom-dots {
 main .our-team-section .container .bottom-dots i {
   font-size: 12px;
   margin: 8px;
+}
+main .testimonial-section {
+  background-color: #F0D082;
+  padding-bottom: 120px;
+}
+main .testimonial-section .container {
+  background-color: white;
+  max-width: 1520px;
+  padding: 0px 150px 150px 150px;
+  text-align: center;
+}
+main .testimonial-section .container .btn-black {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+main .testimonial-section .container .section-title p {
+  padding-bottom: 20px;
+}
+main .testimonial-section .container .reviews {
+  display: flex;
+  margin-bottom: 100px;
+  gap: 120px;
+}
+main .testimonial-section .container .reviews .review-box {
+  text-align: start;
+}
+main .testimonial-section .container .reviews .review-box i {
+  color: #F94D1C;
+  margin-bottom: 22px;
+  font-size: 14px;
+}
+main .testimonial-section .container .reviews .review-box p {
+  line-height: 2;
+}
+main .testimonial-section .container .reviews .review-box .client {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+main .testimonial-section .container .reviews .review-box .client img {
+  margin-right: 16px;
+}
+main .testimonial-section .container .reviews .review-box .client .client-info h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+main .testimonial-section .container .reviews .review-box .client .client-info .client-work-position {
+  color: #F94D1C;
+  margin: 0;
 }
