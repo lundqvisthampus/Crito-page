@@ -839,7 +839,6 @@ main {
                         padding-top: 16px;
                         padding-bottom: 16px;
                     }
-                    padding: 10px 0px;
 
                     @media (min-width: 1200px) {
                         padding-top: 60px;
@@ -848,7 +847,7 @@ main {
             }
 
             .team-members {
-                gap: 20px;
+                gap: 30px;
                 
                 @media (min-width: 1200px) {
                     display: flex;
@@ -856,15 +855,19 @@ main {
 
                 .members-first, .members-second {
                     display: flex;
-                    gap: 20px;
+                    gap: 30px;
                     justify-content: center;
 
                     .member {
 
                         img {
-                            margin: 40px 0px;
+                            margin-top: 60px;
+                            margin-bottom: 20px;
                             width: 100%;
-    
+                            
+                            @media (min-width: 1200px) {
+                                margin: 40px 0px;
+                            }
                         }
     
                         h3 {
@@ -901,7 +904,7 @@ main {
 
         .container {
             background-color: white;
-            padding: 0px 120px 130px 120px;
+            padding: 0px 120px 120px 120px;
             text-align: center;
 
             @media (min-width: 1400px) {
@@ -983,6 +986,87 @@ main {
 
             }
 
+        }
+    }
+
+    .article-news-section {
+        
+        .container {
+
+            .top-row {
+                align-items: center;
+                justify-content: space-between;
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                    text-align: start;
+                }
+
+                .section-title {
+                    padding-bottom: 30px;
+
+                    @media (min-width: 1200px) {
+                        padding-bottom: 0;
+                    }
+                }
+
+                .browse-team {
+
+                    .btn-transparent {
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        padding-top: 140px;
+                    }
+                }
+            }
+
+
+                
+            .articles-and-news {
+                gap: 20px;
+
+                @media (min-width: 768px) {
+                    display: flex;
+                }
+
+                .article {
+
+                    img {
+                        margin-top: 60px;
+                        margin-bottom: 20px;
+                        width: 100%;
+
+                        @media (min-width: 1200px) {
+                            margin: 20px 0px;
+                        }
+                    }
+
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color:#636363;
+                    }
+                }
+            }
+                
+            .bottom-dots {
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 80px;
+
+                i {
+                    font-size: 12px;
+                    margin: 8px;
+                }
+            }
         }
     }
 }

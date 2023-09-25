@@ -720,9 +720,6 @@ main .our-team-section .container .top-row .section-title {
     padding-bottom: 60px;
   }
 }
-main .our-team-section .container .top-row .browse-team {
-  padding: 10px 0px;
-}
 main .our-team-section .container .top-row .browse-team .btn-transparent {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -733,7 +730,7 @@ main .our-team-section .container .top-row .browse-team .btn-transparent {
   }
 }
 main .our-team-section .container .team-members {
-  gap: 20px;
+  gap: 30px;
 }
 @media (min-width: 1200px) {
   main .our-team-section .container .team-members {
@@ -742,12 +739,18 @@ main .our-team-section .container .team-members {
 }
 main .our-team-section .container .team-members .members-first, main .our-team-section .container .team-members .members-second {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
 }
 main .our-team-section .container .team-members .members-first .member img, main .our-team-section .container .team-members .members-second .member img {
-  margin: 40px 0px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .team-members .members-first .member img, main .our-team-section .container .team-members .members-second .member img {
+    margin: 40px 0px;
+  }
 }
 main .our-team-section .container .team-members .members-first .member h3, main .our-team-section .container .team-members .members-second .member h3 {
   font-family: "DM Sans", sans-serif;
@@ -772,7 +775,7 @@ main .testimonial-section {
 }
 main .testimonial-section .container {
   background-color: white;
-  padding: 0px 120px 130px 120px;
+  padding: 0px 120px 120px 120px;
   text-align: center;
 }
 @media (min-width: 1400px) {
@@ -846,4 +849,67 @@ main .testimonial-section .container .reviews .review-box .client .client-info h
 main .testimonial-section .container .reviews .review-box .client .client-info .client-work-info {
   color: #F94D1C;
   margin: 0;
+}
+main .article-news-section .container .top-row {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  main .article-news-section .container .top-row {
+    display: flex;
+    text-align: start;
+  }
+}
+main .article-news-section .container .top-row .section-title {
+  padding-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  main .article-news-section .container .top-row .section-title {
+    padding-bottom: 0;
+  }
+}
+main .article-news-section .container .top-row .browse-team .btn-transparent {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  main .article-news-section .container .top-row .browse-team {
+    padding-top: 140px;
+  }
+}
+main .article-news-section .container .articles-and-news {
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  main .article-news-section .container .articles-and-news {
+    display: flex;
+  }
+}
+main .article-news-section .container .articles-and-news .article img {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  main .article-news-section .container .articles-and-news .article img {
+    margin: 20px 0px;
+  }
+}
+main .article-news-section .container .articles-and-news .article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+main .article-news-section .container .articles-and-news .article p {
+  color: #636363;
+}
+main .article-news-section .container .bottom-dots {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+main .article-news-section .container .bottom-dots i {
+  font-size: 12px;
+  margin: 8px;
 }
