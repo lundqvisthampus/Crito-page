@@ -429,21 +429,41 @@ main .newsletter-section {
   background-color: #F0EFE9;
   position: relative;
   padding: 80px 0px;
+  z-index: 0;
 }
 main .newsletter-section .bkg-lines-right {
+  display: none;
+  z-index: -1;
   position: absolute;
   bottom: 40px;
   right: 0;
 }
+@media (min-width: 768px) {
+  main .newsletter-section .bkg-lines-right {
+    display: inline;
+  }
+}
 main .newsletter-section .container {
-  display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  main .newsletter-section .container {
+    display: flex;
+    text-align: start;
+  }
 }
 main .newsletter-section .container h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  main .newsletter-section .container h2 {
+    margin-bottom: 0;
+  }
 }
 main .newsletter-section .container form input {
   color: #191919;
@@ -685,7 +705,7 @@ main .why-us-section .container .why-us-2 {
   z-index: -1;
   position: absolute;
   bottom: 20px;
-  right: -300px;
+  right: -290px;
 }
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us-2 {
