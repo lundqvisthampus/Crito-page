@@ -20,7 +20,7 @@ html, body {
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
-  padding: 10px 26px;
+  padding: 10px 36px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -40,7 +40,7 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
   text-decoration: none;
-  padding: 10px 26px;
+  padding: 10px 36px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -60,7 +60,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 10px 26px;
+  padding: 10px 36px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -340,7 +340,7 @@ main .features-section .container .features-first h2 {
   font-size: 45px;
   padding-bottom: 40px;
 }
-main .features-section .container .features-first a {
+main .features-section .container .features-first .btn-yellow {
   padding: 16px 160px;
 }
 main .features-section .container .features-second {
@@ -366,107 +366,6 @@ main .features-section .container .features-second .left-boxes .advice-box h3, m
 main .features-section .container .features-second .left-boxes .advice-box p, main .features-section .container .features-second .right-boxes .advice-box p {
   color: #636363;
   padding-bottom: 50px;
-}
-main .project-case-section .container .section-title {
-  text-align: center;
-}
-main .project-case-section .container .project-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-@media (min-width: 768px) {
-  main .project-case-section .container .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-main .project-case-section .container .project-grid .project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  color: #191919;
-  text-decoration: none;
-}
-main .project-case-section .container .project-grid .project img {
-  width: 100%;
-  height: auto;
-}
-main .project-case-section .container .project-grid .project h3 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  padding-top: 35px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #DAD9D3;
-}
-main .project-case-section .container .project-grid .project .readmore {
-  padding: 15px;
-  display: block;
-  text-align: right;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #191919;
-}
-main .project-case-section .container .project-grid .project .readmore i {
-  margin-left: 3px;
-}
-main .project-case-section .container .project-grid .project:hover {
-  text-decoration: underline;
-}
-main .project-case-section .container .center-content {
-  margin-top: 40px;
-  margin-bottom: 90px;
-}
-main .newsletter-section {
-  background-color: #F0EFE9;
-  position: relative;
-  padding: 80px 0px;
-  z-index: 0;
-}
-main .newsletter-section .bkg-lines-right {
-  display: none;
-  z-index: -1;
-  position: absolute;
-  bottom: 40px;
-  right: 0;
-}
-@media (min-width: 768px) {
-  main .newsletter-section .bkg-lines-right {
-    display: inline;
-  }
-}
-main .newsletter-section .container {
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (min-width: 1200px) {
-  main .newsletter-section .container {
-    display: flex;
-    text-align: start;
-  }
-}
-main .newsletter-section .container h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-@media (min-width: 1200px) {
-  main .newsletter-section .container h2 {
-    margin-bottom: 0;
-  }
-}
-main .newsletter-section .container form input {
-  color: #191919;
-  padding: 15px 30px;
-  font-size: 16px;
-  border-radius: 25px;
-  outline: none;
-  border: 1px solid rgba(25, 25, 25, 0.1);
-  margin-right: 20px;
 }
 main .about-company-section {
   margin-top: 70px;
@@ -526,12 +425,13 @@ main .about-company-section .container .section-title .main-text {
 }
 main .about-company-section .container .section-title .bottom-buttons {
   display: flex;
-  gap: 50px;
+  gap: 18px;
   justify-content: center;
 }
 @media (min-width: 1200px) {
   main .about-company-section .container .section-title .bottom-buttons {
     justify-content: start;
+    gap: 50px;
   }
 }
 @media (min-width: 1400px) {
@@ -702,6 +602,58 @@ main .why-us-section .container .why-us-img2 {
   main .why-us-section .container .why-us-img2 {
     display: inline;
   }
+}
+main .project-case-section .container .section-title {
+  text-align: center;
+}
+main .project-case-section .container .project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  main .project-case-section .container .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+main .project-case-section .container .project-grid .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+main .project-case-section .container .project-grid .project img {
+  width: 100%;
+  height: auto;
+}
+main .project-case-section .container .project-grid .project h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+main .project-case-section .container .project-grid .project .readmore {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #191919;
+}
+main .project-case-section .container .project-grid .project .readmore i {
+  margin-left: 3px;
+}
+main .project-case-section .container .project-grid .project:hover {
+  text-decoration: underline;
+}
+main .project-case-section .container .center-content {
+  margin-top: 40px;
+  margin-bottom: 90px;
 }
 main .our-team-section {
   background-color: #F0D082;
@@ -924,6 +876,61 @@ main .article-news-section .container .bottom-dots {
 main .article-news-section .container .bottom-dots i {
   font-size: 12px;
   margin: 8px;
+}
+main .newsletter-section {
+  background-color: #F0EFE9;
+  position: relative;
+  padding: 80px 0px;
+  z-index: 0;
+}
+main .newsletter-section .bkg-lines-right {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+@media (min-width: 768px) {
+  main .newsletter-section .bkg-lines-right {
+    display: inline;
+  }
+}
+main .newsletter-section .container {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  main .newsletter-section .container {
+    display: flex;
+    text-align: start;
+  }
+}
+main .newsletter-section .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  main .newsletter-section .container h2 {
+    margin-bottom: 0;
+  }
+}
+main .newsletter-section .container form input {
+  color: #191919;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  main .newsletter-section .container form input {
+    margin-bottom: 0;
+  }
 }
 
 footer {
