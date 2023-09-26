@@ -222,6 +222,7 @@ main .showcase-section .bkg-lines {
   left: 0;
   bottom: 0;
   z-index: -1;
+  width: 100%;
 }
 main .showcase-section .container {
   display: flex;
@@ -229,8 +230,7 @@ main .showcase-section .container {
   align-items: center;
 }
 main .showcase-section .container .content {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0px;
   text-align: center;
 }
 @media (min-width: 1200px) {
@@ -256,10 +256,7 @@ main .showcase-section .container .content h1 {
 main .showcase-section .container .content p {
   color: #636363;
   font-size: 18px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 40px 10px;
 }
 @media (min-width: 768px) {
   main .showcase-section .container .content p {
@@ -377,17 +374,23 @@ main .about-company-section {
 }
 main .about-company-section .container {
   display: flex;
+  position: relative;
 }
 main .about-company-section .container .company-images {
   display: none;
   padding-left: 55px;
   padding-right: 20px;
-  position: relative;
 }
 main .about-company-section .container .company-images .company-img2 {
   position: absolute;
-  left: -72px;
-  bottom: 64px;
+  left: -50px;
+  bottom: 68px;
+}
+@media (min-width: 1400px) {
+  main .about-company-section .container .company-images .company-img2 {
+    left: -50px;
+    bottom: 36px;
+  }
 }
 main .about-company-section .container .company-images .company-img3 {
   position: absolute;
@@ -425,25 +428,31 @@ main .about-company-section .container .section-title .main-text {
 }
 main .about-company-section .container .section-title .bottom-buttons {
   display: flex;
-  gap: 18px;
+  gap: 36px;
   justify-content: center;
 }
 @media (min-width: 1200px) {
   main .about-company-section .container .section-title .bottom-buttons {
     justify-content: start;
-    gap: 50px;
   }
 }
 @media (min-width: 1400px) {
   main .about-company-section .container .section-title .bottom-buttons {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+}
+main .about-company-section .container .section-title .bottom-buttons .btn-black {
+  padding: 10px 22px;
+}
+@media (min-width: 1200px) {
+  main .about-company-section .container .section-title .bottom-buttons .btn-black {
+    padding: 10px 36px;
   }
 }
 main .about-company-section .container .section-title .bottom-buttons .video-button {
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: 16px;
   text-decoration: none;
   color: #191919;
 }
@@ -545,18 +554,22 @@ main .why-us-section .container {
 main .why-us-section .container .why-us .section-title {
   padding: 0;
   text-align: center;
+  margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us .section-title {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
   display: flex;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
     display: block;
+    text-align: start;
   }
 }
 main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
@@ -565,13 +578,18 @@ main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-s
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
     display: flex;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 0px;
   }
 }
 main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
   font-size: 46px;
   margin-right: 36px;
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
+    margin-right: 36px;
+  }
 }
 main .why-us-section .container .why-us .first-boxes .skills-box .skills-box-text h3, main .why-us-section .container .why-us .second-boxes .skills-box .skills-box-text h3 {
   font-family: "DM Sans", sans-serif;

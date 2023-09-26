@@ -244,6 +244,7 @@ main {
             left: 0;
             bottom: 0;
             z-index: -1;
+            width: 100%;
         }
     
         .container {
@@ -252,8 +253,7 @@ main {
             align-items: center;
     
             .content {
-                padding-top: 40px;
-                padding-bottom: 40px;
+                padding: 40px 0px;
                 text-align: center;
     
                 @media (min-width: 1200px) {
@@ -277,10 +277,7 @@ main {
                 p {
                     color: #636363;
                     font-size: 18px;
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-                    padding-left: 10px;
-                    padding-right: 10px;
+                    padding: 40px 10px;
     
                     @media (min-width: 768px) {
                         font-size: 20px;
@@ -413,17 +410,22 @@ main {
         
         .container {
             display: flex;
+            position: relative;
 
             .company-images {
                 display: none;
                 padding-left: 55px;
                 padding-right: 20px;
-                position: relative;
 
                 .company-img2 {
                     position: absolute;
-                    left: -72px;
-                    bottom: 64px;
+                    left: -50px;
+                    bottom: 68px;
+
+                    @media (min-width: 1400px) {
+                        left: -50px;
+                        bottom: 36px;  
+                    }
                 }
 
                 .company-img3 {
@@ -464,16 +466,23 @@ main {
 
                 .bottom-buttons {
                     display: flex;
-                    gap: 18px;
+                    gap: 36px;
                     justify-content: center;
 
                     @media (min-width: 1200px) {
                         justify-content: start;
-                        gap: 50px;
                     }
 
                     @media (min-width: 1400px) {
-                        padding-top: 50px;
+                        padding-top: 30px;
+                    }
+
+                    .btn-black {
+                        padding: 10px 22px;
+
+                        @media (min-width: 1200px) {
+                            padding: 10px 36px;
+                        }
                     }
 
 
@@ -481,7 +490,6 @@ main {
                         display: flex;
                         align-items: center;
                         font-weight: 600;
-                        font-size: 16px;
                         text-decoration: none;
                         color: #191919;
 
@@ -596,6 +604,7 @@ main {
             padding-top: 60px;
             z-index: 0;
 
+
             @media (min-width: 1200px) {
                 justify-content: space-between;
             }
@@ -604,17 +613,22 @@ main {
                 .section-title {
                     padding: 0;
                     text-align: center;
+                    margin-bottom: 40px;
 
                     @media (min-width: 1200px) {
                         text-align: start;
+                        margin-bottom: 0;
                     }
                 }
 
+
                 .first-boxes, .second-boxes {
                     display: flex;
+                    text-align: center;
 
                     @media (min-width: 1200px) {
                         display: block;
+                        text-align: start;
                     }
 
                     .skills-box {
@@ -622,13 +636,17 @@ main {
 
                         @media (min-width: 1200px) {
                             display: flex;
-                            margin: 40px 0px 0px 0px;
+                            margin: 40px 0px 0px;
                         }
     
                         i {
                             font-size: 46px;
                             margin-right: 36px;
                             margin-bottom: 20px;
+
+                            @media (min-width: 1200px) {
+                                margin-right: 36px;
+                            }
                         }
     
                         .skills-box-text {
