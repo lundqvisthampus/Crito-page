@@ -693,20 +693,15 @@ main .why-us-section .container .why-us-img1 {
 }
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us-img1 {
-    height: 460px;
+    height: 540px;
     display: inline;
-  }
-}
-@media (min-width: 1400px) {
-  main .why-us-section .container .why-us-img1 {
-    height: 520px;
   }
 }
 main .why-us-section .container .why-us-img2 {
   display: none;
   z-index: -1;
   position: absolute;
-  bottom: 20px;
+  bottom: 22px;
   right: 0;
 }
 @media (min-width: 1200px) {
