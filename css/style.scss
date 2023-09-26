@@ -245,15 +245,10 @@ main {
         z-index: 0;
 
         .bkg-lines {
-            display: none;
             position: absolute;
             left: 0;
             bottom: 0;
             z-index: -1;
-
-            @media (min-width: 992px) {
-                display: inline
-            }
         }
     
         .container {

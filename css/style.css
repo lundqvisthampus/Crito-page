@@ -218,16 +218,10 @@ main .showcase-section {
   z-index: 0;
 }
 main .showcase-section .bkg-lines {
-  display: none;
   position: absolute;
   left: 0;
   bottom: 0;
   z-index: -1;
-}
-@media (min-width: 992px) {
-  main .showcase-section .bkg-lines {
-    display: inline;
-  }
 }
 main .showcase-section .container {
   display: flex;
