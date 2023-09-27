@@ -244,7 +244,7 @@ main {
             left: 0;
             bottom: 0;
             z-index: -1;
-            width: 100%;
+            width: 50%;
         }
     
         .container {
@@ -277,7 +277,7 @@ main {
                 p {
                     color: #636363;
                     font-size: 18px;
-                    padding: 40px 10px;
+                    padding: 10px 10px 30px;
     
                     @media (min-width: 768px) {
                         font-size: 20px;
@@ -376,6 +376,7 @@ main {
 
                 @media (min-width: 1200px) {
                     justify-content: space-evenly;
+                    margin-top: 30px;
                 }
 
                 .left-boxes, .right-boxes {
@@ -405,7 +406,7 @@ main {
         margin-top: 70px;
 
         @media (min-width: 1200px) {
-            margin: 80px 0px;
+            margin: 100px 0px 50px;
         }
         
         .container {
@@ -641,7 +642,6 @@ main {
     
                         i {
                             font-size: 46px;
-                            margin-right: 36px;
                             margin-bottom: 20px;
 
                             @media (min-width: 1200px) {
@@ -768,10 +768,6 @@ main {
 
                 .section-title {
                     padding-bottom: 30px;
-
-                    @media (min-width: 1200px) {
-                        padding-bottom: 60px;
-                    }
                 }
 
                 .browse-team {
@@ -781,7 +777,7 @@ main {
                     }
 
                     @media (min-width: 1200px) {
-                        padding-top: 60px;
+                        margin-top: 90px;
                     }
                 }
             }
@@ -846,6 +842,10 @@ main {
 
             @media (min-width: 1400px) {
                 max-width: 1520px;
+            }
+
+            .section-title {
+                padding-bottom: 70px;
             }
 
             .btn-black {
@@ -935,10 +935,6 @@ main {
 
                 .section-title {
                     padding-bottom: 30px;
-
-                    @media (min-width: 1200px) {
-                        padding-bottom: 0;
-                    }
                 }
 
                 .browse-team {
@@ -948,7 +944,7 @@ main {
                     }
 
                     @media (min-width: 1200px) {
-                        padding-top: 140px;
+                        padding-top: 120px;
                     }
                 }
             }
@@ -1009,15 +1005,10 @@ main {
         z-index: 0;
 
         .bkg-lines-right {
-            display: none;
-            z-index: -1;
             position: absolute;
+            z-index: -1;
             bottom: 40px;
             right: 0;
-
-            @media (min-width: 768px) {
-                display: inline;
-            }
         }
 
         .container {
@@ -1065,6 +1056,15 @@ footer {
     background-color: #0E1021;
     
     .top-footer {
+        position: relative;
+        z-index: 0;
+        .bkg-lines-right {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            right: 0;
+        }
+
         .container {
             text-align: center;
             justify-content: space-between;

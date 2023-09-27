@@ -222,7 +222,7 @@ main .showcase-section .bkg-lines {
   left: 0;
   bottom: 0;
   z-index: -1;
-  width: 100%;
+  width: 50%;
 }
 main .showcase-section .container {
   display: flex;
@@ -256,7 +256,7 @@ main .showcase-section .container .content h1 {
 main .showcase-section .container .content p {
   color: #636363;
   font-size: 18px;
-  padding: 40px 10px;
+  padding: 10px 10px 30px;
 }
 @media (min-width: 768px) {
   main .showcase-section .container .content p {
@@ -349,6 +349,7 @@ main .features-section .container .features-second {
 @media (min-width: 1200px) {
   main .features-section .container .features-second {
     justify-content: space-evenly;
+    margin-top: 30px;
   }
 }
 main .features-section .container .features-second .left-boxes .advice-box i, main .features-section .container .features-second .right-boxes .advice-box i {
@@ -369,7 +370,7 @@ main .about-company-section {
 }
 @media (min-width: 1200px) {
   main .about-company-section {
-    margin: 80px 0px;
+    margin: 100px 0px 50px;
   }
 }
 main .about-company-section .container {
@@ -583,7 +584,6 @@ main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-s
 }
 main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
   font-size: 46px;
-  margin-right: 36px;
   margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
@@ -690,18 +690,13 @@ main .our-team-section .container .top-row {
 main .our-team-section .container .top-row .section-title {
   padding-bottom: 30px;
 }
-@media (min-width: 1200px) {
-  main .our-team-section .container .top-row .section-title {
-    padding-bottom: 60px;
-  }
-}
 main .our-team-section .container .top-row .browse-team .btn-transparent {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 @media (min-width: 1200px) {
   main .our-team-section .container .top-row .browse-team {
-    padding-top: 60px;
+    margin-top: 90px;
   }
 }
 main .our-team-section .container .team-members {
@@ -757,6 +752,9 @@ main .testimonial-section .container {
   main .testimonial-section .container {
     max-width: 1520px;
   }
+}
+main .testimonial-section .container .section-title {
+  padding-bottom: 70px;
 }
 main .testimonial-section .container .btn-black {
   padding: 14px 30px;
@@ -839,18 +837,13 @@ main .article-news-section .container .top-row {
 main .article-news-section .container .top-row .section-title {
   padding-bottom: 30px;
 }
-@media (min-width: 1200px) {
-  main .article-news-section .container .top-row .section-title {
-    padding-bottom: 0;
-  }
-}
 main .article-news-section .container .top-row .browse-team .btn-transparent {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 @media (min-width: 1200px) {
   main .article-news-section .container .top-row .browse-team {
-    padding-top: 140px;
+    padding-top: 120px;
   }
 }
 main .article-news-section .container .articles-and-news {
@@ -902,16 +895,10 @@ main .newsletter-section {
   z-index: 0;
 }
 main .newsletter-section .bkg-lines-right {
-  display: none;
-  z-index: -1;
   position: absolute;
+  z-index: -1;
   bottom: 40px;
   right: 0;
-}
-@media (min-width: 768px) {
-  main .newsletter-section .bkg-lines-right {
-    display: inline;
-  }
 }
 main .newsletter-section .container {
   text-align: center;
@@ -953,6 +940,16 @@ main .newsletter-section .container form input {
 
 footer {
   background-color: #0E1021;
+}
+footer .top-footer {
+  position: relative;
+  z-index: 0;
+}
+footer .top-footer .bkg-lines-right {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
 }
 footer .top-footer .container {
   text-align: center;
