@@ -335,7 +335,7 @@ main {
 
     .features-section {
         .container {
-            border: 3px solid #F0EFE9;
+            border: 2px solid #d8d8d8;
             max-width: 1520px;
             padding-top: 60px;
 
@@ -1200,14 +1200,15 @@ main {
     }
 
     .contact-section {
-        .container {
+        .contact-container {
             margin-top: 120px;
             display: flex;
             justify-content: space-between;
+
             .contact-box {
                 display: flex;
                 gap: 20px;
-                border: 2px solid #F0EFE9;
+                border: 2px solid #d8d8d8;
                 padding: 45px 115px 55px 55px;
 
                 i {
@@ -1226,6 +1227,55 @@ main {
                         margin: 0;
                         font-size: 18px;
                         color: #636363;
+                    }
+                }
+            }
+        }
+        .message-container {
+            background-color: #F0EFE9;
+            max-width: 1300px;
+            margin-top: 80px;
+            margin-bottom: 120px;
+            padding-top: 135px;
+            padding-bottom: 100px;
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .message-box {
+                display: flex;
+                justify-content: center;
+
+                form {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    width: 80%;
+                    
+                    input {
+                        padding: 12px 32px;
+                        margin-bottom: 16px;
+                        outline: none;
+                        border-radius: 32px;
+                        border: none;
+                    }
+
+                    textarea {
+                        margin-bottom: 45px;
+                        padding: 12px 32px 100px;
+                        border-radius: 32px;
+                        border: none;
+                        line-height: 1.5;
+                        resize: none;
+                        outline: none;
+                    }
+
+                    .btn-yellow {
+
                     }
                 }
             }

@@ -62,7 +62,7 @@
             </div>
 
             <div class="contact-section">
-                <div class="container">
+                <div class="container contact-container">
                     <div class="contact-box">
                         <i class="fa-solid fa-circle-location-arrow"></i>
                         <div class="contact-info">
@@ -88,14 +88,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="container message-container">
+                    <h2>Leave us a message <br> for any information.</h2>
+                    <div class="message-box">
+                        <form id="contactForm" method="post">
+                            <input type="text" id="inputName" name="inputName" placeholder="Name&#42;">
+                            <input type="email" id="inputEmail" name="inputEmail" placeholder="Email&#42;">
+                            <textarea id="textareaMessage" name="textareaMessage" placeholder="Your Message&#42;"></textarea>
+                            <button type="submit" class="btn-yellow">Send Message <i class="fa-regular fa-arrow-up-right"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-
-
-
-
-
-
         </main>
 
         <footer></footer>
