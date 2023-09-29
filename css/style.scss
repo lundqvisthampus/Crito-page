@@ -1188,6 +1188,10 @@ main {
                 color: #191919;
                 text-decoration: none;
                 margin: 8px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             h1 {
@@ -1200,44 +1204,74 @@ main {
     }
 
     .contact-section {
-        .contact-container {
-            margin-top: 120px;
-            display: flex;
-            justify-content: space-between;
+        margin-top: 60px;
 
-            .contact-box {
+        @media (min-width: 992px) {
+            margin-top: 120px;
+        }
+
+        .contact-container {
+            @media (min-width: 992px) {
                 display: flex;
-                gap: 20px;
+                justify-content: space-between;
+            }            
+
+           .contact-box {
                 border: 2px solid #d8d8d8;
-                padding: 45px 115px 55px 55px;
+                display: flex;
+                justify-content: center;
+                padding: 50px 0px;
+                margin-bottom: 50px;
+
+                @media (min-width: 992px) {
+                    padding-left: 12px;
+                    padding-right: 40px;
+                }
+
+                @media (min-width: 1200px) {
+                    padding-left: 30px;
+                    padding-right: 80px;
+                }
+
+                @media (min-width: 1400px) {
+                    padding-left: 60px;
+                    padding-right: 100px;
+                }
 
                 i {
                     font-size: 60px;
+                    margin-right: 24px;
                 }
 
                 .contact-info {
                     h3 {
                         font-family: 'DM Sans', sans-serif;
+                        font-weight: bold;
                         font-size: 22px;
-                        font-weight: 700;
-                        padding: 4px 0px;
+                        padding: 8px 0px;
                     }
 
                     p {
-                        margin: 0;
                         font-size: 18px;
+                        margin: 0;
+                        line-height: 1.5;
                         color: #636363;
                     }
                 }
             }
         }
+
         .message-container {
             background-color: #F0EFE9;
             max-width: 1300px;
-            margin-top: 80px;
+            margin-top: 40px;
             margin-bottom: 120px;
-            padding-top: 135px;
+            padding-top: 100px;
             padding-bottom: 100px;
+
+            @media (min-width: 1200px) {
+                padding-top: 135px;
+            }
 
             h2 {
                 font-family: 'DM Sans', sans-serif;
@@ -1272,10 +1306,6 @@ main {
                         line-height: 1.5;
                         resize: none;
                         outline: none;
-                    }
-
-                    .btn-yellow {
-
                     }
                 }
             }
