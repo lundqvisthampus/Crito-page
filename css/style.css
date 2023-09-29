@@ -552,6 +552,9 @@ main .why-us-section .container {
     justify-content: space-between;
   }
 }
+main .why-us-section .container .why-us {
+  background-color: #FFFFFF;
+}
 main .why-us-section .container .why-us .section-title {
   padding: 0;
   text-align: center;
@@ -579,7 +582,8 @@ main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-s
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
     display: flex;
-    margin: 40px 0px 0px;
+    margin: 0;
+    padding-top: 40px;
   }
 }
 main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
@@ -605,7 +609,7 @@ main .why-us-section .container .why-us-img1 {
 }
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us-img1 {
-    height: 540px;
+    height: 560px;
     display: inline;
   }
 }
@@ -619,6 +623,8 @@ main .why-us-section .container .why-us-img2 {
 @media (min-width: 1200px) {
   main .why-us-section .container .why-us-img2 {
     display: inline;
+    height: 480px;
+    width: 1080px;
   }
 }
 main .project-case-section .container .section-title {
@@ -1145,7 +1151,12 @@ main .contact-section .message-container .message-box {
 main .contact-section .message-container .message-box form {
   display: grid;
   grid-template-columns: 1fr;
-  width: 80%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  main .contact-section .message-container .message-box form {
+    width: 80%;
+  }
 }
 main .contact-section .message-container .message-box form input {
   padding: 12px 32px;
@@ -1162,4 +1173,8 @@ main .contact-section .message-container .message-box form textarea {
   line-height: 1.5;
   resize: none;
   outline: none;
+}
+main .google-maps iframe {
+  width: 100%;
+  height: 620px;
 }
