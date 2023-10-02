@@ -26,7 +26,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -50,7 +50,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -74,7 +74,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -619,7 +619,7 @@ main {
                         }
 
                         &:hover i {
-                            color: #636363;
+                            color: #191919cb;
                         }
     
                         i {
@@ -680,6 +680,12 @@ main {
                         margin-left: 12px;
                         margin-right: 12px;
                         margin-bottom: 24px;
+                        text-decoration: none;
+                        transition: box-shadow 0.15s ease-in-out;
+
+                        &:hover {
+                            box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
+                        }
     
                         h3 {
                             padding-top: 30px;
@@ -699,6 +705,15 @@ main {
                             display: block;
                             text-align: end;
                             color: #191919;
+                            --fa-primary-color: #ffffff;
+                            --fa-secondary-color: #191919;
+                            --fa-secondary-opacity: 1;
+                        }
+
+                        #white-arrow-icon {
+                            --fa-primary-color: #191919;
+                            --fa-secondary-color: #ffffff;
+                            --fa-secondary-opacity: 1;
                         }
                     }
                 }
@@ -1233,15 +1248,23 @@ main {
                 justify-content: center;
                 padding: 50px 0px;
                 margin-bottom: 50px;
+                color: #191919;
+                text-decoration: none;
+                transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+                &:hover {
+                    border: 2px solid #191919;
+                    box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
+                }
 
                 @media (min-width: 992px) {
-                    padding-left: 12px;
-                    padding-right: 40px;
+                    padding-left: 15px;
+                    padding-right: 30px;
                 }
 
                 @media (min-width: 1200px) {
                     padding-left: 30px;
-                    padding-right: 80px;
+                    padding-right: 70px;
                 }
 
                 @media (min-width: 1400px) {
