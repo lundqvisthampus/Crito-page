@@ -178,6 +178,7 @@ header .container .socialmedia-bar a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: color 0.15s;
 }
 header .container .socialmedia-bar a:hover {
   color: #7c7c7c;
@@ -308,6 +309,7 @@ footer .bottom-footer .container .socialmedia-bar a {
   color: #FFFFFF;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: color 0.15s;
 }
 footer .bottom-footer .container .socialmedia-bar a:hover {
   color: #7c7c7c;

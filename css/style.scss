@@ -190,6 +190,7 @@ header {
                 color: #191919;
                 font-size: 1.3rem;
                 margin-left: 10px;
+                transition: color 0.15s;
 
                 &:hover {
                     color: #7c7c7c;
@@ -341,6 +342,7 @@ footer {
                     color: #FFFFFF;
                     font-size: 1.3rem;
                     margin-left: 10px;
+                    transition: color 0.15s;
     
                     &:hover {
                         color: #7c7c7c;
