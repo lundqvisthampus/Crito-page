@@ -1090,6 +1090,9 @@ main .contact-section {
     margin-top: 120px;
   }
 }
+main .contact-section .contact-container {
+  padding: 0;
+}
 @media (min-width: 992px) {
   main .contact-section .contact-container {
     display: flex;
@@ -1146,7 +1149,6 @@ main .contact-section .contact-container .contact-box .contact-info p {
 }
 main .contact-section .message-container {
   background-color: #F0EFE9;
-  max-width: 1300px;
   margin-top: 40px;
   margin-bottom: 120px;
   padding-top: 100px;

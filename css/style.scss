@@ -1226,6 +1226,8 @@ main {
         }
 
         .contact-container {
+            padding: 0;
+
             @media (min-width: 992px) {
                 display: flex;
                 justify-content: space-between;
@@ -1286,7 +1288,6 @@ main {
 
         .message-container {
             background-color: #F0EFE9;
-            max-width: 1300px;
             margin-top: 40px;
             margin-bottom: 120px;
             padding-top: 100px;
