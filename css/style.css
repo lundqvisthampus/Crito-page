@@ -656,82 +656,83 @@ main .our-services-section .container .browse-services .btn-transparent {
   padding-bottom: 16px;
 }
 main .why-us-section {
+  max-width: 1920px;
   position: relative;
   z-index: 0;
 }
-main .why-us-section .container {
+main .why-us-section .container1 {
   justify-content: center;
   display: flex;
   padding-top: 60px;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container {
+  main .why-us-section .container1 {
     justify-content: space-between;
   }
 }
-main .why-us-section .container .why-us {
+main .why-us-section .container1 .why-us {
   background-color: #FFFFFF;
 }
-main .why-us-section .container .why-us .section-title {
+main .why-us-section .container1 .why-us .section-title {
   padding: 0;
   text-align: center;
   margin-bottom: 40px;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us .section-title {
+  main .why-us-section .container1 .why-us .section-title {
     text-align: start;
     margin-bottom: 0;
   }
 }
-main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
+main .why-us-section .container1 .why-us .first-boxes, main .why-us-section .container1 .why-us .second-boxes {
   display: flex;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us .first-boxes, main .why-us-section .container .why-us .second-boxes {
+  main .why-us-section .container1 .why-us .first-boxes, main .why-us-section .container1 .why-us .second-boxes {
     display: block;
     text-align: start;
     padding-right: 30px;
   }
 }
-main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
+main .why-us-section .container1 .why-us .first-boxes .skills-box, main .why-us-section .container1 .why-us .second-boxes .skills-box {
   margin: 40px;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us .first-boxes .skills-box, main .why-us-section .container .why-us .second-boxes .skills-box {
+  main .why-us-section .container1 .why-us .first-boxes .skills-box, main .why-us-section .container1 .why-us .second-boxes .skills-box {
     display: flex;
     margin: 0;
     padding-top: 40px;
   }
 }
-main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
+main .why-us-section .container1 .why-us .first-boxes .skills-box i, main .why-us-section .container1 .why-us .second-boxes .skills-box i {
   font-size: 46px;
   margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us .first-boxes .skills-box i, main .why-us-section .container .why-us .second-boxes .skills-box i {
+  main .why-us-section .container1 .why-us .first-boxes .skills-box i, main .why-us-section .container1 .why-us .second-boxes .skills-box i {
     margin-right: 36px;
   }
 }
-main .why-us-section .container .why-us .first-boxes .skills-box .skills-box-text h3, main .why-us-section .container .why-us .second-boxes .skills-box .skills-box-text h3 {
+main .why-us-section .container1 .why-us .first-boxes .skills-box .skills-box-text h3, main .why-us-section .container1 .why-us .second-boxes .skills-box .skills-box-text h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
-main .why-us-section .container .why-us .first-boxes .skills-box .skills-box-text p, main .why-us-section .container .why-us .second-boxes .skills-box .skills-box-text p {
+main .why-us-section .container1 .why-us .first-boxes .skills-box .skills-box-text p, main .why-us-section .container1 .why-us .second-boxes .skills-box .skills-box-text p {
   color: #636363;
 }
-main .why-us-section .container .why-us-img1 {
+main .why-us-section .container1 .why-us-img1 {
   display: none;
   padding-top: 30px;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us-img1 {
+  main .why-us-section .container1 .why-us-img1 {
     height: 560px;
     display: inline;
   }
 }
-main .why-us-section .container .why-us-img2 {
+main .why-us-section .container1 .why-us-img2 {
   display: none;
   z-index: -1;
   position: absolute;
@@ -739,10 +740,10 @@ main .why-us-section .container .why-us-img2 {
   right: 0;
 }
 @media (min-width: 1200px) {
-  main .why-us-section .container .why-us-img2 {
+  main .why-us-section .container1 .why-us-img2 {
     display: inline;
     height: 480px;
-    width: 1080px;
+    width: 1100px;
   }
 }
 main .project-case-section .container .section-title {
