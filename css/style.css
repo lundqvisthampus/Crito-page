@@ -24,7 +24,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -46,7 +46,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .btn-black i {
   margin-left: 8px;
@@ -68,7 +68,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -178,7 +178,7 @@ header .container .socialmedia-bar a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
-  transition: color 0.15s;
+  transition: color 0.2s;
 }
 header .container .socialmedia-bar a:hover {
   color: #7c7c7c;
@@ -253,17 +253,17 @@ footer .top-footer .container .crito-box img {
 footer .top-footer .container .crito-box p {
   color: #b8b8b8;
 }
-footer .top-footer .container .info-boxes {
+footer .top-footer .container .all-info-boxes {
   display: flex;
   gap: 50px;
   justify-content: center;
 }
 @media (min-width: 1400px) {
-  footer .top-footer .container .info-boxes {
+  footer .top-footer .container .all-info-boxes {
     gap: 100px;
   }
 }
-footer .top-footer .container .info-boxes .info-box .h3-link {
+footer .top-footer .container .all-info-boxes .info-box .h3-link {
   text-decoration: none;
   color: #FFFFFF;
   font-family: "DM Sans", sans-serif;
@@ -271,19 +271,19 @@ footer .top-footer .container .info-boxes .info-box .h3-link {
   font-weight: 700;
   text-decoration: none;
 }
-footer .top-footer .container .info-boxes .info-box .h3-link:hover {
+footer .top-footer .container .all-info-boxes .info-box .h3-link:hover {
   text-decoration: underline;
 }
-footer .top-footer .container .info-boxes .info-box .info-link {
+footer .top-footer .container .all-info-boxes .info-box a {
   color: #b8b8b8;
   display: none;
   text-decoration: none;
 }
-footer .top-footer .container .info-boxes .info-box .info-link:hover {
+footer .top-footer .container .all-info-boxes .info-box a:hover {
   text-decoration: underline;
 }
 @media (min-width: 1200px) {
-  footer .top-footer .container .info-boxes .info-box .info-link {
+  footer .top-footer .container .all-info-boxes .info-box a {
     display: block;
     padding-top: 14px;
   }
@@ -309,7 +309,7 @@ footer .bottom-footer .container .socialmedia-bar a {
   color: #FFFFFF;
   font-size: 1.3rem;
   margin-left: 10px;
-  transition: color 0.15s;
+  transition: color 0.2s;
 }
 footer .bottom-footer .container .socialmedia-bar a:hover {
   color: #7c7c7c;
@@ -532,7 +532,7 @@ main .about-company-section .container .section-title .main-text {
 }
 main .about-company-section .container .section-title .bottom-buttons {
   display: flex;
-  gap: 36px;
+  gap: 30px;
   justify-content: center;
 }
 @media (min-width: 1200px) {
@@ -559,7 +559,7 @@ main .about-company-section .container .section-title .bottom-buttons .video-but
   font-weight: 600;
   text-decoration: none;
   color: #191919;
-  transition: color 0.15s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 main .about-company-section .container .section-title .bottom-buttons .video-button:hover {
   color: #969696;
@@ -605,13 +605,23 @@ main .our-services-section .container .services {
   }
 }
 main .our-services-section .container .services .first-boxes .consulting-box, main .our-services-section .container .services .second-boxes .consulting-box {
-  padding: 46px 18px;
+  padding: 16px 18px;
   background-color: white;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 24px;
+  margin: 0px 12px 24px 12px;
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  main .our-services-section .container .services .first-boxes .consulting-box, main .our-services-section .container .services .second-boxes .consulting-box {
+    padding: 46px 18px;
+  }
+}
+main .our-services-section .container .services .first-boxes .consulting-box:hover, main .our-services-section .container .services .second-boxes .consulting-box:hover {
+  box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
 }
 main .our-services-section .container .services .first-boxes .consulting-box h3, main .our-services-section .container .services .second-boxes .consulting-box h3 {
+  color: #191919;
   padding-top: 30px;
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
@@ -647,12 +657,12 @@ main .our-services-section .container .browse-services .btn-transparent {
 }
 main .why-us-section {
   position: relative;
+  z-index: 0;
 }
 main .why-us-section .container {
   justify-content: center;
   display: flex;
   padding-top: 60px;
-  z-index: 0;
 }
 @media (min-width: 1200px) {
   main .why-us-section .container {
@@ -941,6 +951,7 @@ main .article-news-section .container .top-row {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 10px;
 }
 @media (min-width: 1200px) {
   main .article-news-section .container .top-row {
@@ -951,12 +962,12 @@ main .article-news-section .container .top-row {
 main .article-news-section .container .top-row .section-title {
   padding-bottom: 30px;
 }
-main .article-news-section .container .top-row .browse-team .btn-transparent {
+main .article-news-section .container .top-row .browse-articles .btn-transparent {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 @media (min-width: 1200px) {
-  main .article-news-section .container .top-row .browse-team {
+  main .article-news-section .container .top-row .browse-articles {
     padding-top: 120px;
   }
 }
@@ -1107,7 +1118,7 @@ main .contact-section .contact-container .contact-box {
   margin-bottom: 50px;
   color: #191919;
   text-decoration: none;
-  transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 main .contact-section .contact-container .contact-box:hover {
   border: 2px solid #191919;

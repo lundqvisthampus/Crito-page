@@ -26,7 +26,10 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.2s ease-in-out, 
+    border 0.2s ease-in-out, 
+    color 0.2s ease-in-out, 
+    box-shadow 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -50,7 +53,10 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.2s ease-in-out, 
+    border 0.2s ease-in-out, 
+    color 0.2s ease-in-out, 
+    box-shadow 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -74,7 +80,10 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: background-color 0.2s ease-in-out, 
+    border 0.2s ease-in-out, 
+    color 0.2s ease-in-out, 
+    box-shadow 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -190,7 +199,7 @@ header {
                 color: #191919;
                 font-size: 1.3rem;
                 margin-left: 10px;
-                transition: color 0.15s;
+                transition: color 0.2s;
 
                 &:hover {
                     color: #7c7c7c;
@@ -278,7 +287,7 @@ footer {
                 }
             }
 
-            .info-boxes {
+            .all-info-boxes {
                 display: flex;
                 gap: 50px;
                 justify-content: center;
@@ -301,7 +310,7 @@ footer {
                         }
                     }
     
-                    .info-link {
+                    a {
                         color:#b8b8b8;
                         display: none;
                         text-decoration: none;
@@ -342,7 +351,7 @@ footer {
                     color: #FFFFFF;
                     font-size: 1.3rem;
                     margin-left: 10px;
-                    transition: color 0.15s;
+                    transition: color 0.2s;
     
                     &:hover {
                         color: #7c7c7c;
@@ -587,7 +596,7 @@ main {
 
                 .bottom-buttons {
                     display: flex;
-                    gap: 36px;
+                    gap: 30px;
                     justify-content: center;
 
                     @media (min-width: 1200px) {
@@ -613,7 +622,7 @@ main {
                         font-weight: 600;
                         text-decoration: none;
                         color: #191919;
-                        transition: color 0.15s ease-in-out;
+                        transition: color 0.2s ease-in-out;
 
                         &:hover {
                             color: #969696;
@@ -668,13 +677,23 @@ main {
                     }
 
                     .consulting-box {
-                        padding: 46px 18px;
+                        padding: 16px 18px;
                         background-color: white;
-                        margin-left: 12px;
-                        margin-right: 12px;
-                        margin-bottom: 24px;
+                        margin: 0px 12px 24px 12px;
+                        display: block;
+                        text-decoration: none;
+                        transition: box-shadow 0.2s ease-in-out;
+
+                        @media (min-width: 768px) {
+                            padding: 46px 18px;
+                        }
+
+                        &:hover {
+                            box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
+                        }
     
                         h3 {
+                            color: #191919;
                             padding-top: 30px;
                             font-family: 'DM Sans', sans-serif;
                             font-size: 22px;
@@ -722,12 +741,12 @@ main {
 
     .why-us-section {
         position: relative;
+        z-index: 0;
 
         .container {
             justify-content: center;
             display: flex;
             padding-top: 60px;
-            z-index: 0;
 
             @media (min-width: 1200px) {
                 justify-content: space-between;
@@ -789,7 +808,6 @@ main {
                     }
                 }
             }
-
             .why-us-img1 {
                 display: none;
                 padding-top: 30px;
@@ -1055,6 +1073,7 @@ main {
                 align-items: center;
                 justify-content: space-between;
                 text-align: center;
+                margin-bottom: 10px;
 
                 @media (min-width: 1200px) {
                     display: flex;
@@ -1065,7 +1084,7 @@ main {
                     padding-bottom: 30px;
                 }
 
-                .browse-team {
+                .browse-articles {
                     .btn-transparent {
                         padding-top: 16px;
                         padding-bottom: 16px;
@@ -1082,7 +1101,6 @@ main {
                 @media (min-width: 768px) {
                     display: flex;
                 }
-
 
                 .article {
                     color: #191919;
@@ -1241,7 +1259,7 @@ main {
                 margin-bottom: 50px;
                 color: #191919;
                 text-decoration: none;
-                transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
                 &:hover {
                     border: 2px solid #191919;
