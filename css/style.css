@@ -769,6 +769,7 @@ main .project-case-section .container .project-grid .project {
 main .project-case-section .container .project-grid .project img {
   width: 100%;
   height: auto;
+  transition: box-shadow 0.2s ease-in-out;
 }
 main .project-case-section .container .project-grid .project h3 {
   font-family: "DM Sans", sans-serif;
@@ -782,17 +783,20 @@ main .project-case-section .container .project-grid .project .readmore {
   padding: 15px;
   display: block;
   text-align: right;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
-  color: #191919;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease-in-out;
 }
 main .project-case-section .container .project-grid .project .readmore i {
   margin-left: 3px;
 }
-main .project-case-section .container .project-grid .project:hover {
-  text-decoration: underline;
+main .project-case-section .container .project-grid .project:hover .readmore {
+  text-decoration-color: #191919;
+}
+main .project-case-section .container .project-grid .project:hover img {
+  box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
 }
 main .project-case-section .container .center-content {
   margin-top: 40px;
@@ -805,6 +809,7 @@ main .our-team-section .container .top-row {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin-bottom: 60px;
 }
 @media (min-width: 1200px) {
   main .our-team-section .container .top-row {
@@ -836,16 +841,29 @@ main .our-team-section .container .team-members .members-first, main .our-team-s
   display: flex;
   gap: 30px;
   justify-content: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  main .our-team-section .container .team-members .members-first, main .our-team-section .container .team-members .members-second {
+    margin-bottom: 0;
+  }
+}
+main .our-team-section .container .team-members .members-first .member, main .our-team-section .container .team-members .members-second .member {
+  color: #191919;
+  text-decoration: none;
 }
 main .our-team-section .container .team-members .members-first .member img, main .our-team-section .container .team-members .members-second .member img {
-  margin-top: 60px;
   margin-bottom: 20px;
   width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
 }
 @media (min-width: 1200px) {
   main .our-team-section .container .team-members .members-first .member img, main .our-team-section .container .team-members .members-second .member img {
-    margin: 40px 0px;
+    margin-bottom: 40px;
   }
+}
+main .our-team-section .container .team-members .members-first .member:hover img, main .our-team-section .container .team-members .members-second .member:hover img {
+  box-shadow: 4px 4px 6px 1px rgba(61, 61, 61, 0.4);
 }
 main .our-team-section .container .team-members .members-first .member h3, main .our-team-section .container .team-members .members-second .member h3 {
   font-family: "DM Sans", sans-serif;
@@ -854,6 +872,7 @@ main .our-team-section .container .team-members .members-first .member h3, main 
 }
 main .our-team-section .container .team-members .members-first .member p, main .our-team-section .container .team-members .members-second .member p {
   color: #636363;
+  margin: 0;
 }
 main .our-team-section .container .bottom-dots {
   text-align: center;
