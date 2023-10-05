@@ -255,8 +255,8 @@ footer .top-footer .container .crito-box p {
 }
 footer .top-footer .container .all-info-boxes {
   display: flex;
-  gap: 50px;
   justify-content: center;
+  gap: 50px;
 }
 @media (min-width: 1400px) {
   footer .top-footer .container .all-info-boxes {
@@ -270,6 +270,7 @@ footer .top-footer .container .all-info-boxes .info-box .h3-link {
   font-size: 22px;
   font-weight: 700;
   text-decoration: none;
+  display: block;
 }
 footer .top-footer .container .all-info-boxes .info-box .h3-link:hover {
   text-decoration: underline;
@@ -885,9 +886,22 @@ main .our-team-section .container .bottom-dots {
   padding-top: 40px;
   padding-bottom: 60px;
 }
-main .our-team-section .container .bottom-dots i {
-  font-size: 12px;
-  margin: 8px;
+main .our-team-section .container .bottom-dots .switch-button {
+  margin: 0px 8px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgba(25, 25, 25, 0.3294117647);
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+main .our-team-section .container .bottom-dots .switch-button:hover {
+  background-color: rgba(25, 25, 25, 0.6588235294);
+}
+main .our-team-section .container .bottom-dots .switch-button:active {
+  background-color: #191919;
+}
+main .our-team-section .container .bottom-dots .black-button {
+  background-color: #191919;
 }
 main .testimonial-section {
   background-color: #F0D082;
@@ -969,7 +983,7 @@ main .testimonial-section .container .reviews .review-box .client .client-info h
     font-weight: 700;
   }
 }
-main .testimonial-section .container .reviews .review-box .client .client-info .client-work-info {
+main .testimonial-section .container .reviews .review-box .client .client-info p {
   color: #F94D1C;
   margin: 0;
 }
@@ -1042,9 +1056,22 @@ main .article-news-section .container .bottom-dots {
   padding-top: 40px;
   padding-bottom: 80px;
 }
-main .article-news-section .container .bottom-dots i {
-  font-size: 12px;
-  margin: 8px;
+main .article-news-section .container .bottom-dots .switch-button {
+  margin: 0px 8px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgba(25, 25, 25, 0.3294117647);
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+main .article-news-section .container .bottom-dots .switch-button:hover {
+  background-color: rgba(25, 25, 25, 0.6588235294);
+}
+main .article-news-section .container .bottom-dots .switch-button:active {
+  background-color: #191919;
+}
+main .article-news-section .container .bottom-dots .black-button {
+  background-color: #191919;
 }
 main .newsletter-section {
   background-color: #F0EFE9;
