@@ -81,6 +81,29 @@ html, body {
   box-shadow: 4px 4px 4px 1px rgba(61, 61, 61, 0.5);
 }
 
+.btn-multiple-dots {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.btn-multiple-dots .switch-button {
+  margin: 0px 8px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgba(25, 25, 25, 0.3294117647);
+  border: none;
+  transition: background-color 0.15s ease-in-out;
+}
+.btn-multiple-dots .switch-button:hover {
+  background-color: rgba(25, 25, 25, 0.6588235294);
+}
+.btn-multiple-dots .switch-button:active {
+  background-color: #191919;
+}
+.btn-multiple-dots .black-switch-button {
+  background-color: #191919;
+}
+
 .section-title {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -271,6 +294,7 @@ footer .top-footer .container .all-info-boxes .info-box .h3-link {
   font-weight: 700;
   text-decoration: none;
   display: block;
+  margin-bottom: 20px;
 }
 footer .top-footer .container .all-info-boxes .info-box .h3-link:hover {
   text-decoration: underline;
@@ -881,28 +905,6 @@ main .our-team-section .container .team-members .members-first .member p, main .
   color: #636363;
   margin: 0;
 }
-main .our-team-section .container .bottom-dots {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-main .our-team-section .container .bottom-dots .switch-button {
-  margin: 0px 8px;
-  padding: 6px;
-  border-radius: 50%;
-  background-color: rgba(25, 25, 25, 0.3294117647);
-  border: none;
-  transition: background-color 0.15s ease-in-out;
-}
-main .our-team-section .container .bottom-dots .switch-button:hover {
-  background-color: rgba(25, 25, 25, 0.6588235294);
-}
-main .our-team-section .container .bottom-dots .switch-button:active {
-  background-color: #191919;
-}
-main .our-team-section .container .bottom-dots .black-button {
-  background-color: #191919;
-}
 main .testimonial-section {
   background-color: #F0D082;
   padding-bottom: 120px;
@@ -1053,28 +1055,6 @@ main .article-news-section .container .articles-and-news .article:hover h3 {
 main .article-news-section .container .articles-and-news .article p {
   color: #636363;
 }
-main .article-news-section .container .bottom-dots {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 80px;
-}
-main .article-news-section .container .bottom-dots .switch-button {
-  margin: 0px 8px;
-  padding: 6px;
-  border-radius: 50%;
-  background-color: rgba(25, 25, 25, 0.3294117647);
-  border: none;
-  transition: background-color 0.15s ease-in-out;
-}
-main .article-news-section .container .bottom-dots .switch-button:hover {
-  background-color: rgba(25, 25, 25, 0.6588235294);
-}
-main .article-news-section .container .bottom-dots .switch-button:active {
-  background-color: #191919;
-}
-main .article-news-section .container .bottom-dots .black-button {
-  background-color: #191919;
-}
 main .newsletter-section {
   background-color: #F0EFE9;
   position: relative;
@@ -1182,6 +1162,10 @@ main .contact-section .contact-container .contact-box {
   text-decoration: none;
   transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+main .contact-section .contact-container .contact-box i {
+  font-size: 60px;
+  margin-right: 24px;
+}
 main .contact-section .contact-container .contact-box:hover {
   border: 2px solid #191919;
   box-shadow: 4px 4px 4px 1px rgba(61, 61, 61, 0.5);
@@ -1203,10 +1187,6 @@ main .contact-section .contact-container .contact-box:hover {
     padding-left: 60px;
     padding-right: 100px;
   }
-}
-main .contact-section .contact-container .contact-box i {
-  font-size: 60px;
-  margin-right: 24px;
 }
 main .contact-section .contact-container .contact-box .contact-info h3 {
   font-family: "DM Sans", sans-serif;
